@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+/*Reseta todo o padding e margin do site, e aplica uma fonte padrão*/
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+/*Configurações básicas de estilo da barra de navegação*/
+#navigation{
+    height: 64px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #9a4c2e;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/*Organização da imagem e título do site*/
+#website-brand{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 1rem;
+}
+
+/*Estilização do logo na barra de navegação*/
+#website-brand img{
+    height: 50px;
+    border-radius: 100%;
+    /*box-shadow: 2px 2px 5px rgba(153, 76, 46, 0.5);*/
+}
+
+/*Fonte personalizada para o titulo*/
+#website-brand h1{
+    font-family: "Aladin", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*Botão de menu para dispositivo móveis*/
+#button-menu{
+    border: none;
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    margin-right: 1rem;
+}
+
+
+/*Icone do botão de menu*/
+#button-menu img{
+    max-width: 100%;
+    height: auto;
+}
+
+/*Estilização do menu*/
+#links-menu{
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 250px;
+    height: 25%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    transition: right 0.3s ease-in-out;
+    z-index: 1001;
+}
+
+/*Ajuste na lista de links do menu*/
+#links-menu ul{
+    list-style: none;
+}
+
+#links-menu ul li {
+    margin-bottom: 1rem;
+}
+
+/*Personalização dos links*/
+#links-menu ul li a{
+    text-decoration: none;
+    color: #9a4c2e;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+/*Personalização ao clicar no link*/
+#links-menu ul li a:hover{
+    text-decoration: none;
+    background-color: #9a4c2e;
+    color: white;
+    font-size: 18px;
+}
+
+/*Overlay para quando o menu abre*/
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100dvw;
+    height: 100dvh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 1000;
+}
+
+/* Mostrar sidebar */
+#links-menu.active {
+    right: 0;
+}
+  
+#overlay.active {
+    display: block;
+}
+
+#introduction{
+    display: flex;
+    text-align: center;
+    background-color: red;
+    background-image: url("../assets/images/Delivery-de-comida-saudável.capa_.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+}
+
+#introduction > div{
+    background-color: rgba(255, 255, 255, 0.747);
+    border-radius: 10px;
+    max-width: 80dvw;
+    padding: 20px 10px;
+    margin: auto;
+}
+
+#introduction h2{
+    margin-bottom: 1rem;
+    font-size: 1em;
+}
+
+#introduction p{
+    font-size: 0.8em;
+    margin: auto;
+    width: 80%;
+}
+
+#tips{
+    background-color: rgb(198, 198, 198);
+}
+
+#tips-problems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+#tips-planting{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+
+.cards{
+    background-color: white;
+    text-align: center;
+    width: 250px;
+    color: #D66049;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+    padding-bottom: 20px;
+}
+
+.cards img{
+    width: 100%;
+}
+
+.cards h4{
+    margin-bottom: 20px;
+}
+
+.cards button{
+    border: none;
+    color: white;
+    background-color: #D66049;
+    padding: 5px 25px;
+}
