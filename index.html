@@ -33,10 +33,10 @@
 
         <div id="links-menu">
           <ul>
-            <li><a href="#">Minha Alimentação</a></li>
-            <li><a href="#">IMC</a></li>
-            <li><a href="#">Dicas</a></li>
-            <li><a href="#">Sobre nós</a></li>
+            <li><button onclick="scrollerView('introduction')">Inicio</button></li>
+            <li><button onclick="scrollerView('tips')">Dicas</button></li>
+            <li><button onclick="scrollerView('imc')">IMC</button></li>
+            <li><button onclick="scrollerView('about-us')">Sobre nós</button></li>
           </ul>
         </div>
 
@@ -199,6 +199,8 @@ seu IMC:
                 <span>kg</span>
               </div>
               <button class="calcular-btn">Calcular</button>
+              <div id="resultado-imc" style="margin-top: 40px; text-align: center; font-size: 18px; font-weight: bold;"></div>
+
             </div>
       </section>
       <section id="benefits">
@@ -236,7 +238,7 @@ seu IMC:
         </article>
       </section>
     </main>
-    <footer>
+    <footer id="about-us">
       <h4>Quem somos nós</h4>
       <img src="assets/images/png.jpg" alt="Foto dos alunos" />
       <p>
