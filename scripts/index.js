@@ -4,12 +4,14 @@ const overlay = document.getElementById("overlay");
 
 buttonMenu.addEventListener("click", () => 
 {
-    sideMenu.classList.add("active");
-    overlay.classList.add("active");
+    buttonMenu.classList.toggle("active");
+    sideMenu.classList.toggle("active");
+    overlay.classList.toggle("active");
 })
 
 overlay.addEventListener("click", () => 
 {
+    buttonMenu.classList.remove("active");
     sideMenu.classList.remove("active");
     overlay.classList.remove("active");
 })

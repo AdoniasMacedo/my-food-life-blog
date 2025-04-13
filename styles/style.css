@@ -52,6 +52,8 @@
     gap: 8px;
     flex-direction: column;
     z-index: 1002;
+    transform-origin: center;
+    
 }
 
 
@@ -65,7 +67,7 @@
     width: 100%;
     background-color:white;
     height: 5px;
-    
+    transition: 0.5s;
 }
 
 /*Estilização do menu*/
@@ -122,6 +124,20 @@
     z-index: 1000;
 }
 
+#button-menu.active div:nth-child(1){
+    background-color: black;
+    transform: translateY(15px) rotate(-45deg);
+}
+
+#button-menu.active div:nth-child(2){
+    width: 0px;
+}
+
+#button-menu.active div:nth-child(3){
+    background-color: black;
+    transform: translateY(-11px) rotate(45deg);
+}
+
 /* Mostrar sidebar */
 #links-menu.active {
     right: 0;
@@ -130,6 +146,8 @@
 #overlay.active {
     display: block;
 }
+
+
 
 #introduction{
     display: flex;
