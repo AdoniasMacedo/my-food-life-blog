@@ -34,10 +34,10 @@
 
         <div id="links-menu">
           <ul>
-            <li><button onclick="scrollerView('introduction')">Inicio</button></li>
-            <li><button onclick="scrollerView('tips')">Dicas</button></li>
-            <li><button onclick="scrollerView('imc')">IMC</button></li>
-            <li><button onclick="scrollerView('about-us')">Sobre nós</button></li>
+            <li><button onclick="scrollerView('introduction'); menu()">Inicio</button></li>
+            <li><button onclick="scrollerView('tips'); menu()">Dicas</button></li>
+            <li><button onclick="scrollerView('imc'); menu()">IMC</button></li>
+            <li><button onclick="scrollerView('about-us'); menu()">Sobre nós</button></li>
           </ul>
         </div>
 
@@ -71,7 +71,7 @@
               alt="Imagem de vários alimentos saudaveis fotografados juntos"
             />
             <h4>Não consegue fazer uma dieta saudável?</h4>
-            <button>Saiba Mais</button>
+            <button onclick="scrollerView('article-1')">Saiba Mais</button>
           </article>
           <article class="cards">
             <img
@@ -79,7 +79,7 @@
               alt="Mesa com alimentos para uma refeição em família"
             />
             <h4>Já comeu muito a ponto de sair do controle?</h4>
-            <button>Saiba Mais</button>
+            <button onclick="scrollerView('article-2')">Saiba Mais</button>
           </article>
           <article class="cards">
             <img
@@ -87,8 +87,8 @@
               alt="Imagem de vários chocolates"
             />
             <h4>Você já se pegou louco para comer uma comida?</h4>
-            <button>Saiba Mais</button>
-          </article>
+            <button onclick="scrollerView('article-3')">Saiba Mais</button>
+          </article >
         </div>
         <h3 id="tips-title-2">Como plantar pode te ajudar?</h3>
         <div id="tips-planting">
@@ -98,7 +98,7 @@
               alt="Imagem de alguém trabalhando em uma horta"
             />
             <h4>Como montar sua horta?</h4>
-            <button>Saiba Mais</button>
+            <button onclick="scrollerView('introduction')">Saiba Mais</button>
           </article>
           <article class="cards">
             <img
@@ -106,7 +106,7 @@
               alt="Imagem de alguém trabalhando em uma horta"
             />
             <h4>Como plantar pode te ajudar?</h4>
-            <button>Saiba Mais</button>
+            <button onclick="scrollerView('introduction')">Saiba Mais</button>
           </article>
           <article class="cards">
             <img
@@ -114,22 +114,22 @@
               alt="Imagem de hostaliças"
             />
             <h4>Melhores épocas para plantar vegetais?</h4>
-            <button>Saiba Mais</button>
+            <button onclick="scrollerView('introduction')">Saiba Mais</button>
           </article>
         </div>
       </section>
       <section id="readline-mobile">
         <article>
-          <h3>NÃO CONSEGUE FAZER UMA DIETA SAUDÁVEL?</h3>
+          <h3 id="article-1">NÃO CONSEGUE FAZER UMA DIETA SAUDÁVEL?</h3>
           <img src="./assets/images/Comidas-saudaveis-e-baratas.webp" alt="Imagem de comidas saudaveis">
           <p>Muitas pessoas têm dificuldade em fazer uma dieta saudável por vários motivos, como falta de tempo, falta de dinheiro, hábitos alimentares e fatores emocionais. Algumas pessoas, ao tentar fazer uma dieta, acabam se restringindo excessivamente, focando apenas no peso e ignorando a saúde física. No entanto, na maioria das vezes, isso pode ser um reflexo de problemas mentais subjacentes que precisam ser tratados. Enquanto algumas pessoas conseguem jejuar por horas sem sentir fome, outras não conseguem ficar nem 30 minutos sem comer. Além disso, muitas pessoas consomem alimentos de baixo teor nutricional, o que pode prejudicar sua saúde a longo prazo. Para uma alimentação saudável a restrição não é considerada a melhor opção, porém a alimentação equilibrada é a solução</p>
         </article>
-        <article>
+        <article id="article-2">
           <h3>JÁ COMEU MUITO A PONTO DE SAIR DO CONTROLE?</h3>
           <img src="./assets/images/varios-itens-de-fast-food-prontos-para-comer-capturados_961875-48057.avif" alt="Imagem de comidas de fastfood">
           <p>A busca por comida pode ser influenciada por problemas emocionais, como ansiedade, tristeza e estresse. Por exemplo, quando estamos angustiados, podemos buscar comida como uma forma de aliviar nossos sentimentos, o que pode liberar dopamina e trazer uma sensação de bem-estar e prazer. No entanto, essa busca por comida pode se tornar um ciclo vicioso de compulsão alimentar. Quando tentamos restringir nossa alimentação para seguir uma dieta saudável, podemos nos sentir privados e aumentar a tentação de comer em excesso. Portanto, é fundamental encontrar um equilíbrio saudável na alimentação, sem nos restringir demais. Isso pode incluir praticar a mindfulness, desenvolver uma relação saudável com a comida e o corpo, e encontrar formas de gerenciar o estresse e a ansiedade que não envolvam a comida. Além disso, buscar apoio de profissionais de saúde pode ser fundamental para desenvolver um plano de alimentação saudável e equilibrado.</p>
         </article>
-        <article>
+        <article id="article-3">
           <h3>VOCÊ JÁ SE PEGOU LOUCO PARA COMER UMA COMIDA?</h3>
           <img src="./assets/images/My food life2.webp" alt="Imagem de doces">
           <p>A busca por comida pode ser influenciada por problemas emocionais, como ansiedade, tristeza e estresse. Por exemplo, quando estamos angustiados, podemos buscar comida como uma forma de aliviar nossos sentimentos, o que pode liberar dopamina e trazer uma sensação de bem-estar e prazer. No entanto, essa busca por comida pode se tornar um ciclo vicioso de compulsão alimentar. Quando tentamos restringir nossa alimentação para seguir uma dieta saudável, podemos nos sentir privados e aumentar a tentação de comer em excesso. Portanto, é fundamental encontrar um equilíbrio saudável na alimentação, sem nos restringir demais. Isso pode incluir praticar a mindfulness, desenvolver uma relação saudável com a comida e o corpo, e encontrar formas de gerenciar o estresse e a ansiedade que não envolvam a comida. Além disso, buscar apoio de profissionais de saúde pode ser fundamental para desenvolver um plano de alimentação saudável e equilibrado.</p>
@@ -200,9 +200,10 @@ seu IMC:
                 <span>kg</span>
               </div>
               <button class="calcular-btn">Calcular</button>
-              <div id="resultado-imc" style="margin-top: 40px; text-align: center; font-size: 18px; font-weight: bold;"></div>
-
             </div>
+        </div>
+      </section>
+      <section id="resultado-imc">
       </section>
       <section id="benefits">
         <article>

@@ -20,8 +20,6 @@ function scrollerView(idName)
     document.getElementById(idName).scrollIntoView({
         behavior:"smooth"
     })
-
-    menu();
 }
 
 //Calculadora IMC
@@ -72,9 +70,12 @@ document.querySelector(".calcular-btn").addEventListener("click", () => {
   // Mostrar resultado
   const resultadoDiv = document.getElementById("resultado-imc");
   resultadoDiv.innerHTML = `
-    Sexo: ${sexoSelecionado}<br>
-    Idade: ${idade} anos<br>
-    IMC: ${imcArredondado} (${classificacao})
+    <div>
+        <h3>Resultado:</h3>
+        <p>Sexo: ${sexoSelecionado}</p>
+        <p>Idade: ${idade}</p>
+        <p>IMC: ${imcArredondado} (${classificacao})</p>
+    </div>
   `;
 
   // Scroll suave até o resultado
