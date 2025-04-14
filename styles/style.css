@@ -388,10 +388,6 @@ main{
 }
 
 #resultado-imc div{
-    /*margin-top: 40px; 
-    text-align: center; 
-    font-size: 18px; 
-    font-weight: bold;*/
     border: 1px solid #9a4c2e;
     background-color: white;
     width: 80%;
