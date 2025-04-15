@@ -9,9 +9,12 @@ overlay.addEventListener("click", menu)
 
 function menu()
 {
-    buttonMenu.classList.toggle("active");
-    sideMenu.classList.toggle("active");
-    overlay.classList.toggle("active");
+    if (window.matchMedia("(max-width: 425px)").matches)
+    {
+        buttonMenu.classList.toggle("active");
+        sideMenu.classList.toggle("active");
+        overlay.classList.toggle("active");
+    }    
 }
 
 //Scroller do site

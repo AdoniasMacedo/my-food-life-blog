@@ -1,0 +1,207 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) {
+    #button-menu{
+        display: none;
+    }
+
+    #website-brand{
+        margin-left: 50px;
+        margin-top: 10px;
+    }
+    
+    #website-brand h1{
+        margin-bottom: 10px;
+    }
+
+    #links-menu{
+        position: relative;
+        right: 0px;
+        background-color: #ffffff00;
+        box-shadow: 0px 0px 0px #ffffff00;
+        width: 390px;
+        height: 100%;
+        padding: 0px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #links-menu ul{
+        display: flex;
+        width: 100%;
+        gap: 20px;
+    }
+
+    #links-menu li{
+
+    }
+
+    #links-menu ul li button{
+        background-color: #ffffff00;
+        color: white;
+        transition: 0.5s;
+    }
+
+    #links-menu ul li button:hover{
+        background-color: white;
+        color: #9a4c2e;
+    }
+
+    #introduction div{
+        max-width: 50dvw;
+        padding: 40px 10px;
+    }
+
+    #introduction h2{
+        font-size: 1.5em;
+    }
+
+    #introduction p{
+        font-size: 1em;
+    }
+
+    
+    #tips-title-1{
+        font-size: 2rem;
+    }
+
+    #tips-title-2{
+        font-size: 2rem;
+    }
+
+    #tips-problems{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+        margin: auto;
+        width: 1000px;
+    }
+
+    #tips-planting{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+        margin: auto;
+        width: 1000px;
+    }
+
+    #readline-mobile{
+        display:none;
+    }
+
+    #readline-desktop{
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+        margin: 100px 0px;
+        background-color: white;
+        padding: 0px 0px 100px 0px;
+    }
+
+    #readline-desktop article{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #readline-desktop article > div h3{
+        color: #D66049;
+        text-align: center;
+        font-size: 1.5em;
+        margin: auto;
+        max-width: 80%;
+    }
+    
+    #readline-desktop article img{
+        min-width: 50dvw;
+        max-height: 385px;
+        display: block;
+        margin: 0px auto;
+    }
+    
+    #readline-desktop article p{
+        text-align: justify;
+        font-size: 1em;
+        margin: 20px 30px 0px 30px;
+    }
+
+    .reverse{
+        flex-direction: row-reverse;
+    }
+
+    #article-1{
+        scroll-margin-top: 160px;
+    }
+
+    #article-2{
+        scroll-margin-top: 160px;
+    }
+
+    #article-3{
+        scroll-margin-top: 160px;
+    }
+
+    #imc-introduction{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0px 50px;
+        margin-bottom: 100px;
+    }
+
+    #imc-introduction h3{
+        font-size: 1.5em;
+    }
+
+    #imc-introduction img{
+        max-width: 500px;
+        max-height: 250px;
+    }
+
+    #imc p{
+        margin: 0px 150px;
+    }
+
+    .calculadora-imc{
+        max-width: 400px;
+        height: 500px;
+    }
+
+    .sexo-opcoes{
+        justify-content: center;
+    }
+
+    .sexo-btn{
+        width: 160px;
+    }
+
+    #benefits article{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #benefits ol{
+        width: 600px;
+    }
+
+    #about-us h4{
+        width: 90%;
+    }
+
+    #about-us img{
+        max-width: 600px;
+        height: 400px;
+
+    }
+
+    #about-us p{
+        margin: 25px 200px;
+    }
+
+}
